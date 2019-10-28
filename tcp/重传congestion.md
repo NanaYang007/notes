@@ -46,3 +46,12 @@ Westwood算法先推算出有多少包已经被送达接收方（根据接收方
 
 Vegas引入全新理念，通过监控网络状态来调整发包速度，实现真正的“拥塞避免”。当网络状况良好时，数据包的RTT（往返时间）比较稳定，这时候就可以增大拥塞窗口；当网络开始繁忙时，数据包开始排队，RTT就会变大，这时候就需要减少拥塞窗口了。该设计最大优势在于，在拥塞真正发生之前，发送方已经能通过RTT预测到，并且通过减慢发送速度来避免丢包的发生。
 
+
+
+后端给的图：
+
+![e4f34327f58c8a44548c5688a436c5c9](/Users/test/Library/Application Support/qunarChat/downloads/e4f34327f58c8a44548c5688a436c5c9.png)
+
+
+
+![6f3ac1c1912073e313e518bfd1d1a96e](/Users/test/Library/Application Support/qunarChat/downloads/6f3ac1c1912073e313e518bfd1d1a96e.png)
